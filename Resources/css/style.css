@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --light: #f4f4f4;
+  --primary: #93cb52;
+  --secondary: #7ab436;
+  --dark: #333;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.2rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.l-heading {
+  font-size: 3.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.bg-light {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.bg-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.bg-dark {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  color: var(--white);
+  background: var(--primary);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-dark {
+  background: var(--dark);
+}
+
+.btn:hover {
+  background: var(--secondary);
+}
+
+.list {
+  margin: 0.5rem 0;
+}
+
+.list li {
+ border-bottom: 1px dotted #555;
+ margin: 1rem 0;
+}
+
+/* Navbar section */
+#nav-bar {
+  background: var(--dark);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+#nav-bar > h1 {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+#nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#nav-bar ul li a {
+  padding: 0.75rem;
+  margin-right: 0.25rem;
+  color: var(--white);
+}
+
+#nav-bar ul li a:hover {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+/* showcase section*/
+#showcase {
+  background: var(--dark) url(../img/2.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: var(--white);
+}
+
+#showcase  .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* overlay */
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* What we do section */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: var(--primary);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Who section */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+  flex-basis: 50%;
+}
+
+#who .who-img {
+  background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+/* Clients section */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+/* Contact Form */
+#contact {
+  display: flex;
+}
+
+#contact .contact-form,
+#contact .map {
+  flex: 1;
+  flex-basis: 50%;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+#contact .contact-form .form-group label {
+  display: block;
+}
+
+#contact .contact-form .form-group input, #contact .contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#contact .contact-form .btn {
+  padding: 0.6rem;
+  width: 100%;
+}
+
+#contact .map {
+  background: url(../img/map.png) no-repeat center center/cover;
+  width: 100%;
+}
+
+#main-footer {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
